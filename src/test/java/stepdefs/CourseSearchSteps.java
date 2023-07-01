@@ -12,23 +12,23 @@ public class CourseSearchSteps {
 
     CourseSearchActions courseSearchActions = new CourseSearchActions(DriverFactory.getDriver());
 
-    @Then("I verify Results have relevant skills")
-    public void i_verify_results_have() {
-        courseSearchActions.verifySearchResults();
-    }
-    @Then("I click on delivery filter")
-    public void i_click_on_delivery_filter() {
-
-        courseSearchActions.clickOnDeliveryFilter();
+    @Then("^I validate the results with (.*)$")
+    public void i_validate_the_results_with_advanced_barista_skills(String skill) {
+        courseSearchActions.validateSearchResults(skill);
     }
 
-    @And("select {string} from the options")
-    public void select_from_the_options(String deliveryOption) {
-        courseSearchActions.selectOption(deliveryOption);
+    @Then("^I select a (.*)$")
+    public void i_select_a(String filter) {
+        courseSearchActions.clickDeliveryFilter(filter);
     }
 
-    @Then("I have seen deivery as {string} from results")
-    public void i_have_seen_deivery_as_from_results(String deliveryOption) {
-        courseSearchActions.VerifySearchResultsHasDeliveryOption(deliveryOption);
+    @Then("^I select (.*) from the options$")
+    public void i_select_filter_type_from_the_options(String filterType) {
+        courseSearchActions.selectFilterType(filterType);
+    }
+
+    @Then("^I validate the (.*) from results$")
+    public void i_validate_the_filter_type_from_results(String filterType) {
+        courseSearchActions.ValidateFilterResults(filterType);
     }
 }

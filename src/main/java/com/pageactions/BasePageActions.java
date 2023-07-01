@@ -192,7 +192,25 @@ public class BasePageActions {
         }
         return null;
     }
-
+    public WebElement findElement(By locator){
+        WebElement element = null;
+        if (isDisplayed(locator)) {
+            element = driver.findElement(locator);
+            customLogger("info", "Element found for locator is: " + element);
+        } else {
+            customLogger("error", "Element not found for locator " + locator);
+        }
+        return element;
+    }
+    public List<WebElement> findElements(By locator){
+        List<WebElement> elements = null;
+        if (isDisplayed(locator)) {
+            elements = driver.findElements(locator);
+        } else {
+            customLogger("error", "Multiple Elements not found for locator " + locator);
+        }
+        return elements;
+    }
 }
 
 

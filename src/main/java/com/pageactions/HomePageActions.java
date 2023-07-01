@@ -19,7 +19,7 @@ public class HomePageActions extends BasePageActions{
 
 
     public void clickSearchButton() {
-        click(HomePage.HEADER_SEARCH);
+        jsForceClick(HomePage.HEADER_SEARCH);
 
     }
 
