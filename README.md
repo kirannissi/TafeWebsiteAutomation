@@ -32,4 +32,5 @@ Demonstrate your understanding of page object modelling and BDD by developing a 
 20) Click the link under 'View your Cucumber Report at:' to view the final report
 21) A beautiful report with screenshots and test data will be displayed
 
+![image](https://github.com/kirannissi/TafeWebsiteAutomation/assets/69224313/03a27131-9d31-4704-9735-885c9a75efbe)
 
