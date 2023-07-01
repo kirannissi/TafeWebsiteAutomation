@@ -1,14 +1,13 @@
-# WebShop Testing Challenge
+# TAFE Website Challenge
 
-As Demo web shop is ecommerce application which is expected to have a lot of areas to test. I believe the sole reason to visit a shopping site is to browse for some products or to buy something that user is interested. I believe the following five areas are high risk to test in this application.
-Five high risk areas of the are listed below:
-* Products is the main part of the application that attract new users or to keep hold of existing users.
-* Login is one of the key areas for an existing user whether to view order history or browse through the site and save to Wishlist or to buy something.
-* As per the layout of this application Shopping cart is the bridge to complete an order (checkout).
-* Global Search is the place where most of the users start their activity in the application to find what they need.
-* Checkout is the final step to complete any transaction and plays a vital role in the success of the business.
-
-As I have to automate two test cases, so I am covering happy paths of Global Search and Checkout and ignoring any negative paths. when I search for a product, availability of the product is already covered by seeing the search results. Whereas, to complete a checkout we need to cross the shopping cart bridge and select a product. Also, users have an option to place an order as Guest. So, Login is not mandatory for everyone. 
+The Scenario:
+Demonstrate your understanding of page object modelling and BDD by developing a BDD scenario for the following steps and automating the scenario using Java and Selenium.
+1. After arriving on the https://www.tafensw.edu.au/ website 
+2. Search for a course using the search box e.g.: Advanced Barista Skills 
+3. Click on the search button to submit the search 
+4. Verify that the course that you searched for appears in the results
+5. Apply the "delivery filter" by setting the filter to "On Campus" 
+6. Verify that the filter has been applied correctly to your chosen course
 
 ##Steps to Run the Project
 1) Download [IntelliJ](https://download.jetbrains.com/idea/ideaIC-2021.3.3.exe?_gl=1*1rwqxw8*_ga*MTY2MDgxMDgyMC4xNjQ2OTExMzcz*_ga_9J976DJZ68*MTY1NTYzMDAxNS4xLjEuMTY1NTYzMDAzNi4w&_ga=2.215772766.898116640.1655630015-1660810820.1646911373 "Intellij 2021.3.3") 
